@@ -1,0 +1,44 @@
+footer {
+    background-color: transparent;
+    width: 85vw;
+    height: 15vh;
+    border-top: solid 1px #FFFFF0;
+    display: flex;
+    justify-content: space-between;
+    gap: 10vw;
+    align-items: center;
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+.icon-footer {
+    color: #50C878;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2.5rem;
+    text-decoration: underline;
+    position: relative;
+    margin-bottom: 1vh;
+}
+
+.footer-links {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #FFFFF0;
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin-top: 0.5vh;
+    transform: scale(1);
+}
+
+.footer-links:hover {
+    color: #50C878;
+    transition: color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+.nav {
+    display: flex;
+    gap: 3.5vw;
+}

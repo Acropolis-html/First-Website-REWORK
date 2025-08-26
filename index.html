@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="./accordion.css">
+    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link crossorigin='' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css' media='print' onload='this.media=&apos;all&apos;' rel='stylesheet'/>
+    <title>PlayField-SPB</title>
+</head>
+<body>
+    <h1 class="icon">PlayField</h1>
+    
+    <header class="header"> 
+        <h2><a href="#home" class="links">Главная</a></h2>
+        <h2><a href="#about" class="links">О нас</a></h2>
+        <h2><a href="#booking" class="links">Забронировать</a></h2>
+        <h2><a href="#contacts" class="links">Контакты</a></h2>
+    </header>
+
+    <main class="main" id="home">
+        <div class="main-text">
+            <h1 class="main-phrase main-font" style="line-height: 7.5vh;">От клика до гола<br><h1 class="main-phrase main-font" style="color: #50C878;">- один шаг</h1></h1>
+
+            <p class="main-paragraph main-font">Забронируй футбольное поле прямо сейчас и проведи время с пользой,<br>Играя на лучших полях города!</p>
+
+            <a href="#booking" class="main-font btn-booking">Забронировать прямо сейчас</a>
+            <div class="main-numbers">
+
+                <div class="number-plays">
+                    <h2 class="number">100 <h2 class="number plus">+</h2></h2>
+
+                    <p class="number-paragraph">Матчей<br> проведено</p>
+                </div>
+
+                <div class="number-playfields">
+                    <h2 class="number">10 <h2 class="number plus">+</h2></h2>
+
+                    <p class="number-paragraph">Полей<br> в наличии</p>
+                </div>
+
+                <div class="number-customers">
+                    <h2 class="number">1к <h2 class="number plus">+</h2></h2>
+
+                    <p class="number-paragraph">Счастливых<br>игроков</p>
+                </div>
+
+            </div>
+        </div>
+        <img src="images/soccer-player.png" alt="" class="football">
+
+        <div class="main-shadow"></div>
+        <div class="second-shadow"></div>
+    </main>
+    <div class="about-mark main-font"><h1>У нас есть</h1></div>
+
+    <div class="third-shadow"></div>
+
+    <div class="about main-font" id="about">
+        <div class="about-elements">
+
+            <div class="background-img">
+                <img src="/images/time.png" alt="" class="about-img">
+            </div>
+
+            <h1 class="about-text">Скорость</h1>
+            <p class="about-paragraph">Забронировать поле можно за пару минут</p>
+
+        </div>
+        <div class="about-elements">
+
+            <div class="background-img">
+                <img src="/images/football-field.png" alt="" class="about-img">
+            </div>
+
+            <h1 class="about-text">Качество</h1>
+            <p class="about-paragraph">Наши поля самые качественные с искусственным покрытием</p>
+
+        </div>
+        <div class="about-elements">
+
+            <div class="background-img">
+                <img src="/images/referi.png" alt="" class="about-img">
+            </div>
+
+            <h1 class="about-text">Бонусы</h1>
+            <p class="about-paragraph">Для каждого матча мы нанимаем профессионального рефери</p>
+
+        </div>
+    </div>
+
+    <div class="form" id="booking">
+
+        <form action="" method="post" class="form-form">
+            <h1 class="main-font booking-slogan">Бронирование</h1>
+            <div class="first-name">
+                <label for="first-name">Имя</label>
+                <input type="text" class="form-input" id="first-name" name="first-name" required>
+            </div>
+            <div class="telephone">
+                <label for="telephone">Телефон</label>
+                <input type="tel" class="form-input input" id="telephone" name="telephone" required>
+            </div>
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" class="form-input input" id="email" name="email">
+            </div>
+            <div class="date">
+                <label for="date">Дата</label>
+                <input type="date" class="form-input input" name="date" id="date" required>
+            </div>
+            <div class="form-numbers" style="display: flex; gap: 1vh; flex-direction: column; justify-content: center; align-items: center; margin-right: 1vw;">
+                <div class="field-number" style="display: flex; align-items: center; flex-direction: column; gap: 1vh;">
+                    <label for="field-number">Футбольное поле (Число из названия)</label>
+                    <select name="field-selector" class="form-input" id="field-selector" required>
+                        <option value="" selected hidden></option>
+                        <option value="Field-1">Поле №1</option>
+                        <option value="Field-2">Поле №2</option>
+                        <option value="Field-3">Поле №3</option>
+                    </select>
+                </div><br>
+                <div class="time" style="display: flex; align-items: center; flex-direction: column; gap: 1vh; margin-top: 1vh; margin-right: 1vw;">
+                    <label for="time" class="label-time">Желаемое время</label>
+                    <div style="display: flex;flex-direction: row; gap: 1.5vw; font-family: 'Comfortaa', sans-serif; font-optical-sizing: auto; font-weight: 400; font-style: normal;">
+                        <label class="time-label-before"style="transform: translateY(0.7vh) translateX(1vw); font-size: 1.1rem;">
+                            От
+                        </label>
+                        <input type="time" class="form-input input time-input-before" id="time" name="from-time" style="width: auto; padding-left: 1vw; padding-right: 1vw; cursor: pointer;" required>
+                        <label class="time-label-after" style="transform: translateY(0.7vh) translateX(1vw); font-size: 1.1rem;">
+                            До
+                        </label>
+                        <input type="time" class="form-input input time-input-after" id="time" name="to-time" style="width: auto; padding-left: 1vw; padding-right: 1vw; cursor: pointer;" required>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="submit-button">Забронировать</button>
+            <div class="form-shadow"></div>
+            <div class="form-second-shadow"></div>
+        </form>
+
+        <button class="arrow arrow-left" onclick="scrollSlider(-1)"><-</button>
+
+        <div class="slider" id="slider">
+
+            <div class="slides">
+
+                <div class="card">
+                    <img src="/images/football-field-1.jpg" alt=""class="img-slider">
+                    <div class="slider-text">
+                        <h1 class="slider-font">Поле №1</h1>
+                        <p style="font-size: 1.6rem;">Адрес: Улица Пушкина дом Колотушкина</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/images/football-field-2.jpg" alt="" class="img-slider">
+                    <div class="slider-text">
+                        <h1 class="slider-font">Поле №2</h1>
+                        <p style="font-size: 1.6rem;">Адрес: Улица Пушкина дом Колотушкина</p>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="/images/football-field-3.jpg" alt="" class="img-slider">
+                    <div class="slider-text">
+                        <h1 class="slider-font">Поле №3</h1>
+                        <p style="font-size: 1.6rem;">Адрес: Улица Пушкина дом Колотушкина</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="arrow arrow-right" onclick="scrollSlider(1)">-></button>
+
+    </div>
+
+
+    <div class="accordion-shadow"></div>
+    <div class="second-accordion-shadow"></div>
+
+    <div class="accordion main-font">
+
+        <h1 style="font-size: 3rem;">Ещё остались вопросы?</h1>
+        <p style="text-align: center; position: relative; top: -6vh; font-size: 1.1rem; color: rgb(151, 151, 151);">У нас есть ответ на все! Здесь представлены самые популярные вопросы, которые задают нам пользователи. Если у Вас имеется вопрос, на который здесь не представлен ответ, то обратитесь в нашу поддержку. </p>
+
+        <div class="accordion-questions">
+
+            <article>
+                <h2 class="question">За сколько дней вперёд можно бронировать?<span class="accordion-plus">+</span></h2>
+                <h3 class="font answer">До 30 дней. Чем раньше бронируете, тем больше шансов занять удобное время.</h3>
+            </article>
+
+            <article>
+                <h2 class="question">Есть ли предоплата?<span class="accordion-plus">+</span></h2>
+                <h3 class="font answer" >Да, при онлайн-бронировании вносится 100% оплаты.</h3>
+            </article>
+
+            <article>
+                <h2 class="question">Можно ли отменить или перенести бронирование?<span class="accordion-plus">+</span></h2>
+                <h3 class="font answer">Да, за 24 часа до игры без штрафа.</h3>
+            </article>
+
+            <article>
+                <h2 class="question">Что делать, если идёт дождь или снег?<span class="accordion-plus">+</span></h2>
+                <h3 class="font answer">Поля с искусственным покрытием работают в любую погоду. Если погодные условия будут экстремальными, мы свяжемся и предложим перенос.</h3>
+            </article>
+
+            <article>
+                <h2 class="question">Предоставляются ли мячи и форма?<span class="accordion-plus">+</span></h2>
+                <h3 class="font answer">Мячи можно взять на месте, форма — своя.</h3>
+            </article>
+
+            <article>
+                <h2 class="question">Сколько человек может играть на поле одновременно?<span class="accordion-plus">+</span></h2>
+                <h3 class="font answer">Это зависит от размера поля. Информация есть в описании площадки.</h3>
+            </article>
+
+        </div>
+
+    </div>
+
+    <footer id="contacts">
+        <h1 class="icon-footer">PlayField</h1>
+        <h1 style="font-family: 'Montserrat', sans-serif; font-weight: 300; font-style: normal; font-optical-sizing: auto;">Создатель: Андрей Сафонкин</h1>
+        <nav class="nav">
+            <a href="https://discordapp.com/users/663819428445814785" class="footer-links" target="_blank"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://github.com/Acropolis-html" target="_blank" class="footer-links"><i class="fa-brands fa-github fa-lg"></i></a>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- npx json-server db.json -->

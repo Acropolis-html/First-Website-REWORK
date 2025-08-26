@@ -1,0 +1,217 @@
+.form {
+    height: 80vh;
+    width: 89vw;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.form-form {
+    width: 35%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: inset 0px 0px 45px 5px #151922;
+    margin-left: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    gap: 2.5vh;
+    background-color: #15192225;
+}
+
+.booking-slogan {
+    position: relative;
+    top: -1.5vh;
+    font-size: 3rem;
+}
+
+.form-input {
+    width: 15vw;
+    height: 3vh;
+    border-radius: 10px;
+    padding-left: 0.5vw;
+    background-color: transparent;
+    border: none;
+    color: #FFFFF0;
+    border: 1px #FFFFF0 solid;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    font-optical-sizing: auto;
+    transition: border-color 0.2s ease;
+}
+
+#field-selector {
+    width: 10vw;
+}
+
+label {
+    display: block;
+    position: relative;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    left: 0.2vw;
+    bottom: 0.2vh;
+    transition: color 0.2s ease;
+    font-size: 1.1rem;
+}
+
+
+.label-focus {
+    color: #50C878;
+    transition: color 0.2s ease;
+}
+
+.form-input-focus {
+    border-color: #50C878;
+    transition: border-color 0.2s ease;
+}
+
+.submit-button {
+    background-color: transparent;
+    border: 1px #FFFFF0 solid;
+    color: #FFFFF0;
+    height: 7vh;
+    width: 14vw;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    margin-top: 1vh;
+    transition: border-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    margin-right: 1vw;
+}
+
+.submit-button:hover {
+    border-color: #50C878;
+    color: #50C878;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input:focus {
+    outline: none;
+}
+
+.slider-font {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.slider {
+    width: 35%;
+    height: 68vh;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    border: #FFFFF0 solid 1px;
+    border-radius: 20px;
+}
+
+.slides {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-slider {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /*  заполняет всё по высоте с обрезкой без искажений  */
+    border-radius: 0px;
+    opacity: 0.5;
+}
+
+.slider-text {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #151922;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-optical-sizing: auto;
+    width: 80%;
+    height: 20%;
+    background-color: #fffff057;
+    border-radius: 15px;
+    padding-top: 2.5vh;
+}
+
+.arrow {
+    width: 3vw;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    border: 1px solid #FFFFF0;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #FFFFF0;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.arrow:hover {
+    color: #151922;
+    background-color: #FFFFF0;
+    border-color: #151922;
+}
+
+.arrow-left {
+    position: relative;
+    left: 3vw;
+}
+
+.arrow-right {
+    position: relative;
+    right: 3vw;
+}
+
+.form-shadow {
+    position: absolute;
+    left: 40vw;
+    top: 160vh;
+    box-shadow: 0px 0px 500px 150px #50c87869;
+    z-index: -100;
+}
+
+.form-second-shadow {
+    position: absolute;
+    box-shadow: 0px 0px 500px 150px #50c87869;
+    z-index: -100;
+    left: 10vw;
+    top: 220vh;
+}
+

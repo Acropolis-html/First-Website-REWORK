@@ -1,0 +1,24 @@
+{
+  "bookings": [
+    {
+      "id": "1",
+      "firstName": "Иван",
+      "telephone": "+79998887766",
+      "email": "ivan@example.com",
+      "date": "2025-08-25",
+      "field": "Field-1",
+      "fromTime": "14:00",
+      "toTime": "15:30"
+    },
+    {
+      "id": "2",
+      "firstName": "Мария",
+      "telephone": "+79995554433",
+      "email": "maria@example.com",
+      "date": "2025-08-26",
+      "field": "Field-2",
+      "fromTime": "16:00",
+      "toTime": "17:30"
+    }
+  ]
+}
