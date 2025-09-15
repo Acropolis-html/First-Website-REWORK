@@ -68,6 +68,7 @@ const registrationForm = document.querySelector('.form-form')
 registrationForm.addEventListener('submit', (event) => {
     event.preventDefault()
 
+    const API_URL = 'http://localhost:3000/bookings';
     const now = new Date()
     const isoDate = now.toISOString().split('T')[0]
 
@@ -86,7 +87,7 @@ registrationForm.addEventListener('submit', (event) => {
     const formData = new FormData(registrationForm)
     const formDataObject = Object.fromEntries(formData)
 
-    fetch('http://localhost:3000/bookings')
+    fetch(API_URL)
         .then(response => response.json())
         .then(booking => {
             let hasConflict = booking.some(bookings =>
@@ -104,7 +105,7 @@ registrationForm.addEventListener('submit', (event) => {
             alert('Успешно!')
             registrationForm.reset()
 
-            fetch('http://localhost:3000/bookings', {
+            fetch(API_URL, {
                 method: 'post',
                 body: JSON.stringify({...formDataObject})
                 }).then((response) => {
